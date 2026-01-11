@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>De-TechLab — Portofolio</title>
+
+  <meta name="description" content="Modern portofolio with galaxy animation and interactive UI">
+  <meta property="og:title" content="De' Cerrick Portofolio">
+  <meta property="og:description" content="Modern animated portfolio website">
+  <link rel="icon" href="assets/logo-sheets.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="galaxy"></canvas>
+<div class="bg-glow"></div>
+
+<nav>
+  <a href="#home" class="active">Home</a>
+  <a href="#experience">Experience</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#certificates">Certificates</a>
+  </nav>
+
+<section id="home" class="hero">
+  <h1>
+    Hi, I'm <span id="typing"></span><br>
+    <small>Frontend Developer & UI Enthusiast</small>
+  </h1>
+
+  <p class="hero-desc">
+    Saya membangun website modern, interaktif, dan elegan dengan fokus pada
+    animasi halus serta performa tinggi.
+  </p>
+
+  <div class="hero-actions">
+    <a href="#projects" class="btn primary">View Projects</a>
+    <a href="#experience" class="btn">Experience</a>
+  </div>
+</section>
+
+<section id="experience">
+  <h2 class="reveal parallax">Experience</h2>
+
+  <div class="timeline">
+    <div class="item reveal">
+      <span>2025</span>
+      <h3>Frontend Developer</h3>
+      <p>Membangun website modern dengan HTML, CSS, JavaScript.</p>
+    </div>
+
+    <div class="item reveal">
+      <span>2025</span>
+      <h3>UI Designer</h3>
+      <p>Desain antarmuka modern, responsif, dan user friendly.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="reveal parallax">Skills</h2>
+
+  <div class="skills">
+    <div class="skill reveal">
+      <span>HTML / CSS</span>
+      <div class="bar"><i style="--level:90%"></i></div>
+    </div>
+
+    <div class="skill reveal">
+      <span>JavaScript</span>
+      <div class="bar"><i style="--level:80%"></i></div>
+    </div>
+
+    <div class="skill reveal">
+      <span>UI / UX Design</span>
+      <div class="bar"><i style="--level:75%"></i></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="reveal parallax">Projects</h2>
+
+  <div class="grid">
+    <div class="card project reveal" onclick="openModal()">
+      <img src="assets/bookverse.png" loading="lazy">
+      <div class="project-info">
+        <h3>E-BookVerse</h3>
+        <p>Platform digital untuk membeli buku secara online.</p>
+        <a href="https://decerrick-sarjana-tidur.github.io/e-book-verse/"
+          target="_blank"
+          class="project-link"
+          onclick="event.stopPropagation()">
+          View Project →
+        </a>
+      </div>
+    </div>
+
+    <div class="card project reveal" onclick="openModal()">
+      <img src="assets/resep.png" loading="lazy">
+      <div class="project-info">
+        <h3>Website Resep Makanan</h3>
+        <p>Memudahkan orang mencari resep makanan nikmat.</p>
+        <a href="https://decerrick-sarjana-tidur.github.io/De-TechLab/"
+          target="_blank"
+          class="project-link"
+          onclick="event.stopPropagation()">
+          View Project →
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section id="certificates">
+  <div id="certModal" class="modal">
+    <div class="modal-content">
+      <img id="certImg">
+      <p id="certDesc"></p>
+      <span class="close">&times;</span>
+    </div>
+  </div>
+
+  <h2 class="reveal parallax">Certificates</h2>
+
+  <div class="grid">
+    <div class="card reveal cert"
+     data-img="https://picsum.photos/800/500"
+     data-desc="Frontend Development Certificate - 2024">
+    <h3>None</h3>
+    <p>Click to preview</p>
+  </div>
+
+  <div class="grid">
+    <div class="card reveal cert"
+     data-img="https://picsum.photos/800/500"
+     data-desc="Frontend Development Certificate - 2024">
+    <h3>None</h3>
+    <p>Click to preview</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 De' Cerrick Rizqulloh Mumtaz. All rights reserved.
+</footer>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <div class="handle"></div>
+    <span class="close" onclick="closeModal()">×</span>
+
+    <div class="carousel">
+      <img id="carouselImg" src="https://picsum.photos/800/500?1">
+      <button class="prev" onclick="prevImg()">‹</button>
+      <button class="next" onclick="nextImg()">›</button>
+    </div>
+
+    <h2>Portofolio Website</h2>
+    <p>Website modern dengan galaxy animation & mobile gesture.</p>
+
+    <div class="tech">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Canvas</span>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
