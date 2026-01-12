@@ -23,10 +23,11 @@ const projectsData = [
     title: "Website Portofolio",
     description: "Untuk personal branding agar bisa mudah dilihat client.",
     image: "assets/portofolio.png",
-    link: "https://decerrick-sarjana-tidur.github.io/De-TechLab/",
+    link: "https://de-techlab-portofolio.netlify.app/",
     tags: ["HTML", "CSS", "JavaScript"]
   }
 ];
 
 // Untuk browser
+
 window.projectsData = projectsData;
