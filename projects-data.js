@@ -29,5 +29,4 @@ const projectsData = [
 ];
 
 // Untuk browser
-
 window.projectsData = projectsData;
