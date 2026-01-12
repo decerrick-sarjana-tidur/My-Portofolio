@@ -22,11 +22,12 @@ const projectsData = [
     id: 3,
     title: "Website Portofolio",
     description: "Untuk personal branding agar bisa mudah dilihat client.",
-    image: "assets/portfolio.png",
+    image: "assets/portofolio.png",
     link: "https://decerrick-sarjana-tidur.github.io/De-TechLab/",
     tags: ["HTML", "CSS", "JavaScript"]
   }
 ];
 
 // Untuk browser
+
 window.projectsData = projectsData;
